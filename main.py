@@ -92,7 +92,7 @@ def get_all_posts():
     posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts)
 
-
+#User Registration
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
