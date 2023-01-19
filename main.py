@@ -124,7 +124,7 @@ def register():
             return redirect(url_for('get_all_posts'))
     return render_template("register.html", form=form)
 
-
+# User Login
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
     form = LoginForm()
